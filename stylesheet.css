@@ -1,0 +1,533 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	box-sizing: border-box;
+}
+
+h1 {
+	margin: 0;
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+}
+
+a {
+	text-decoration: none;
+}
+
+::selection {
+    color: white;
+    background: crimson;
+}
+
+/**********
+	HEADER
+***********/
+
+header {
+	background-color: white;
+}
+
+	#logo {
+		margin: 5% auto;
+		display: block;
+		max-width: 90%;
+	}
+
+	nav {
+		text-align: center;
+		background-color: navy;
+	}
+
+		nav ul {
+			padding: 0;
+			margin: 0;
+		}
+
+			nav ul li {
+				list-style: none;
+				display: inline;
+				font-weight: bold;
+			}
+
+				.nav {
+						padding: 2%;
+						display: inline-block;
+						color: white;
+						font-size: 1.30em;
+						transition: background-color 0.25s linear;
+				}
+
+					.nav:hover {
+						background-color: crimson;
+					}
+
+/*********
+	MAIN
+**********/
+
+main {
+	/*height: 100%;*/
+}
+	section {
+		padding: 7%;
+	}
+
+	section::before {
+	    content: "";
+	    display: block;
+	    width: 0;
+	    height: 0;
+	    clear: both;
+	}
+
+	section::after {
+	    content: "";
+	    display: block;
+	    width: 0;
+	    height: 0;
+	    clear: both;
+	}
+
+	section:nth-child(even) {
+		background-color: navy;
+		color: white;
+	}
+		section:nth-child(even) a {
+			color: white;
+		}
+
+	section:nth-child(odd) {
+		background-color: white;
+	}
+
+		section:nth-child(odd) h1 {
+			color: crimson;
+		}
+
+	/***** За нас ******/
+
+	#about p {
+		text-align: justify;
+		margin-bottom: 0;
+	}
+
+	#about span {
+		font-weight: bold;
+	}
+
+	/*#about img {
+		margin: 0 auto;
+		display: block;
+	}*/
+
+
+	/***** Курсове ******/
+
+	#courses {
+		text-align: center;
+	}
+
+		#courses h1 {
+			margin-bottom: 3%;
+		}
+		#courses article {
+			display: inline-block;
+			width: 45%;
+			margin-right: 5%;
+			vertical-align: text-top;
+		}
+
+		#courses #uslugi {
+			margin-right: 0;
+		}
+
+			#courses ul {
+				list-style: url("http://www.immosol.fr/images/ico-flag_fr.jpg");
+				padding-left: 25px;
+				margin-bottom: 0;
+				text-align: left;
+			}			
+
+			#courses p {
+				font-weight: bold;
+				text-align: left;
+			}	
+
+	/*#courses img {
+		float: right;
+	}*/
+
+	/***** Фестивал ******/
+
+	#festival #poster {
+		width: 37%;
+		height: auto;
+		float: right;
+		margin: 0 0 0/*5%*/ 5%;
+		-webkit-box-shadow: 0px 0px 15px 5px navy;
+		-moz-box-shadow: 0px 0px 15px 5px navy;
+		box-shadow: 0px 0px 15px 5px navy;
+	}
+
+	#festival h1 {
+		text-align: right;
+	}
+
+	#festival p {
+		text-align: justify;
+	}
+
+	#festival q {
+		font-style: italic;
+		display: block;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	/***** Списание ******/
+
+	#alliances #magazine {
+		width: 50%;
+		height: auto;
+		float: left;
+		margin: 0 4% 4% 0;
+		-webkit-box-shadow: 0px 0px 15px 5px crimson;
+		-moz-box-shadow: 0px 0px 15px 5px crimson;
+		box-shadow: 0px 0px 15px 5px crimson;
+	}
+
+	#alliances p {
+		text-align: justify;
+		margin-bottom: 0;
+	}
+
+	#alliances span {
+		font-weight: bold;
+	}
+
+	/****** Персонал ******/
+
+	#staff {
+		text-align: center;
+	}
+
+	#staff h1 {
+		text-align: center;
+		margin-bottom: 8%;
+	}
+
+	#staff article {
+		width: 45%;
+		display: inline-block;
+	}
+		#staff a {
+			color: black;
+			transition: color 0.25s linear;
+		}
+
+		#staff a:hover {
+			color: crimson;
+		}
+
+		#staff article .photo {
+			width: 50%;	
+			/*webkit-box-shadow: 0px 0px 15px 5px crimson;
+			-moz-box-shadow: 0px 0px 15px 5px crimson;
+			box-shadow: 0px 0px 15px 5px crimson;*/			
+		}
+			#staff article #bradinska {
+				border-radius: 200px 200px 0px 200px;
+				-moz-border-radius: 200px 200px 0px 200px;
+				-webkit-border-radius: 200px 200px 0px 200px;
+				border: 3px outset navy;	
+			}
+
+			#staff article #milena {
+				border-radius: 200px 200px 200px 0px;
+				-moz-border-radius: 200px 200px 200px 0px;
+				-webkit-border-radius: 200px 200px 200px 0px;
+				border: 3px inset navy;
+			}
+
+		#staff h2 {
+			font-size: 1.30em;
+		}
+
+	#staff h3 {
+		color: navy;
+		margin-bottom: 0;
+	}
+
+	/****** Галерия *******/
+
+	#gallery {
+		text-align: center;
+	}
+
+		#gallery h1 {
+			margin-bottom: 5%;
+		}
+
+/***********
+	FOOTER
+************/
+
+footer {
+	padding: 5%;
+	background-color: white;
+	text-align: center;
+}
+
+	footer div {
+		display: inline-block;
+		vertical-align: text-top;
+		margin: 0 auto;
+	}
+		footer ul {
+			list-style: url("http://www.immosol.fr/images/ico-flag_fr.jpg");
+			padding-left: 25px;
+			margin-bottom: 0;
+			text-align: left;
+		}
+			footer h1 {
+				color: crimson;
+				font-size: 1.5em;
+				text-align: left;
+			}
+
+			footer a {
+				color: black;
+				transition: color 0.25s linear;
+			}
+
+			footer a:hover {
+				color: navy;
+			}
+			
+		#about-us {
+			width: 15%;
+		}
+
+		#course, #culture, #contact {
+			width: 27%;
+		}
+
+			#contact #socials {
+				list-style: none;
+				padding-left: 0;
+			}
+
+				footer img {
+					width: 20px;
+					height: 20px;
+					margin-right: 3%;
+				}
+
+				/*#fb, #place {
+					float: left;
+				}*/
+
+/******************
+	MEDIA QUERIES
+*******************/
+
+@media screen and (max-width: 1024px) {
+	/*body {
+		background-color: blue;
+	}*/
+	body {
+		font-size: 1em;
+	}
+
+	h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	/*body {
+		background-color: red;
+	}*/
+	
+	header nav ul li a, #staff h2 {
+		font-size: 1.05em;
+	}*/
+	body {
+		background-color: red;
+	}
+
+	body {
+		font-size: 0.9em;
+	}
+
+	h1 {
+		font-size: 1.9em;
+	}
+
+	h2 {
+		font-size: 1.4em;
+	}
+
+	/* FESTIVAL */
+
+	main #festival #poster {
+		width: 45%;
+		height: auto;
+		margin-bottom: 3%;
+	}
+
+	/* MAGAZINE */
+
+	main #alliances #magazine {
+		width: 50%;
+		height: auto;
+	}
+
+}
+
+@media screen and (max-width: 681px) {
+
+	/*body {
+		background-color: yellow;
+	}*/
+
+	footer ul {
+		margin-bottom: 2%;
+	}
+
+	/*footer #about-us {
+		width: 50%;
+	}*/
+
+	footer #about-us, #course, #culture, #contact {
+		width: 45%;
+	}
+
+	footer img {
+		width: 15px;
+		height: 15px;
+	}
+}
+
+@media screen and (max-width: 483px) {
+	/*body {
+		background-color: green;
+	}*/
+
+	body {
+		font-size: 0.8em;
+	}
+
+	h1 {
+		font-size: 1.8em;
+	}
+
+	h2 {
+		font-size: 1.3em;
+	}
+
+	/*header nav ul li a, #staff h2 {
+		font-size: 1.05em;
+	}*/
+
+	/* NAV */
+
+	nav ul li, .nav {
+		display: block;
+	}
+
+	/* COURSES */
+
+	main #courses article {
+		display: block;
+		width: 100%;
+	}
+
+	/* FESTIVAL */
+
+	main #festival #poster {
+		width: 100%;
+		height: auto;
+		margin-bottom: 7%;
+	}
+
+	main #festival h1 {
+		text-align: center;
+	}
+
+	/* MAGAZINE */
+
+	main #alliances #magazine {
+		width: 100%;
+		height: auto;
+		margin-bottom: 7%;
+	}
+
+	/* STAFF */
+
+	#staff article {
+		display: block;
+		width: 100%;
+		margin-bottom: 7%;
+	}
+
+	#staff h2 {
+		font-size: 1.3em;
+	}
+
+	/* FOOTER */
+
+	footer div {
+		display: block;
+	}
+
+	footer ul {
+		margin-bottom: 2%;
+	}
+
+	footer #about-us {
+		width: 100%;
+	}
+
+	footer #course, #culture, #contact {
+		width: 100%;
+	}
+
+	footer img {
+		width: 15px;
+		height: 15px;
+	}
+
+	footer #email {
+		clear: both;
+	}
+}
+
+@media screen and (max-width: 198px) {
+
+	/*body {
+		background-color: black;
+	}*/
+
+	body {
+		font-size: 0.6em;
+	}
+
+	h1 {
+		font-size: 1.6em;
+	}
+
+	h2 {
+		font-size: 1.1em;
+	}
+}
